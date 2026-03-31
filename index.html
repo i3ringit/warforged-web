@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warforged | The 24/7 AI Dungeon Master</title>
+    
+    <!-- Meta Tags / SEO -->
+    <meta name="description" content="Warforged: The 24/7 AI Dungeon Master. Solving DM Burnout and Prep Time Overload with automated storytelling and dynamic worlds.">
+    <meta property="og:title" content="Warforged | The 24/7 AI Dungeon Master">
+    <meta property="og:description" content="Automated storytelling, dynamic worlds, and evolving narratives. Immerse yourself in the future of VTT.">
+    <meta property="og:image" content="assets/hero.png">
+    <meta name="theme-color" content="#0b0f19">
+
+    <!-- Security: CSP for Fonts -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self';">
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,700&family=Outfit:wght@400;700;800&family=Space+Mono&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tactile Noise Grain Overlay -->
+    <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+        <filter id="noiseFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+        </filter>
+    </svg>
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/logo.svg" alt="Warforged Logo" class="logo-icon">
+                <span class="logo-text">WARFORGED</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero staggered-reveal">
+            <div class="hero-bg-wrapper">
+                <img src="assets/hero.png" alt="Warforged AI Dungeon Master" class="hero-img">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="container hero-content">
+                <h1 class="display-title">THE 24/7<br>AI DUNGEON MASTER.</h1>
+                <p class="narrative-subtitle">Experience endless adventures with automated storytelling, dynamic worlds, and narratives that evolve based on your every choice.</p>
+                
+                <div class="cta-wrapper">
+                    <button id="cta-button" class="btn primary-btn">Roll for Initiative (Coming Soon)</button>
+                    <p class="cta-flavor">Solving DM Burnout and Prep Time Overload.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem/Pitch Section -->
+        <section id="pitch" class="pitch container staggered-reveal">
+            <div class="grid col-3">
+                <div class="glass-card">
+                    <span class="card-icon">⚡</span>
+                    <h3>Zero Prep Time</h3>
+                    <p class="interface-text">Focus on playing, not prepping. Warforged handles rules, tracking, and world-building in real-time.</p>
+                </div>
+                <div class="glass-card">
+                    <span class="card-icon">🌀</span>
+                    <h3>Evolving Worlds</h3>
+                    <p class="interface-text">A world that breathes. NPCs remember your interactions, and cities change as the campaign progresses.</p>
+                </div>
+                <div class="glass-card">
+                    <span class="card-icon">🎭</span>
+                    <h3>1,000+ Unique NPCs</h3>
+                    <p class="interface-text">High-fidelity voice AI powering every merchant, villain, and local tavern-goer with distinct personas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features container staggered-reveal">
+            <div class="feature-row">
+                <div class="feature-text">
+                    <h2 class="section-title">THE HANDS</h2>
+                    <p class="interface-text">Full Foundry VTT integration. Control combat, lighting, and ambient soundscapes through the industry-standard MCP protocol.</p>
+                </div>
+                <div class="feature-text">
+                    <h2 class="section-title">THE BRAIN</h2>
+                    <p class="interface-text">Local-First RAG using LanceDB. Your lore, your rules, completely private. Reasoning-optimized AI for a high-fidelity DM experience.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="interface-text opacity-50">&copy; 2026 Warforged Project. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
